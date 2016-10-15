@@ -34,9 +34,9 @@
 <header class="header">
     <div class="container">
         <div class="header_item">
-            <img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="logo">
+            <img src="<?= esc_attr(get_option('site_logo')); ?>" alt="logo">
             <div class="header_descr">
-                <h1 class="header_item__title"><?= get_option('site_name'); ?></h1>
+                <h1 class="header_item__title"><?= esc_attr(get_option('site_name')); ?></h1>
                 <div class="header_item__descr">
                     <p>*Laser and health academy</p>
                     <a href="http://www.laserandhealthacademy.com/" target="_blank" class="pull-right">www.laserandhealthacademy.com</a>

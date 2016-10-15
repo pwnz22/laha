@@ -1,0 +1,11 @@
+/*
+    Admin page styles
+*/
+.header {
+    float: left;
+    text-align: center;
+}
+
+.site_name {
+    color: #eb2733;
+}
