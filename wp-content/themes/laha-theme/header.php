@@ -18,11 +18,6 @@
     <link rel="apple-touch-icon" sizes="72x72" href="<?= get_template_directory_uri(); ?>/img/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="<?= get_template_directory_uri(); ?>/img/favicon/apple-touch-icon-114x114.png">
 
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/libs/slick/css/slick.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/libs/slick/css/slick-theme.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/main.css">
-
     <?php wp_head(); ?>
 
 </head>

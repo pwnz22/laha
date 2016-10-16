@@ -38,12 +38,6 @@
 
 <div class="hidden"></div>
 
-<!-- Load Scripts Start -->
-<script src="<?= get_template_directory_uri(); ?>/js/libs.js"></script>
-<script src="<?= get_template_directory_uri(); ?>/libs/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?= get_template_directory_uri(); ?>/js/common.js"></script>
-<!-- Load Scripts End -->
-
 <?php wp_footer(); ?>
 
 </body>
