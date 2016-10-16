@@ -1,6 +1,3 @@
-<br>
-<br>
-<br>
 <footer class="footer">
     <div class="footer_line"></div>
     <div class="container">

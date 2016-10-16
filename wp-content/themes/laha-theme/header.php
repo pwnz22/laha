@@ -41,13 +41,10 @@
     </div>
 </header>
 
-
-
 <!-- NAVBAR MENU -->
 
 <nav class="main_navbar clearfix">
     <div class="container">
-
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -63,28 +60,6 @@
                 'container_class' => 'navbar_wrapper clearfix',
                 'menu_class' => 'navbar_menu clearfix'
             )); ?>
-            <!--<div class="navbar_wrapper clearfix">
-                <ul class="navbar_menu clearfix">
-                    <li class="navbar_menu-item">
-                        <a href="#">о нас</a>
-                    </li>
-                    <li class="navbar_menu-item">
-                        <a href="#">мероприятия</a>
-                    </li>
-                    <li class="navbar_menu-item">
-                        <a href="#">эксперты</a>
-                    </li>
-                    <li class="navbar_menu-item">
-                        <a href="#">фото / видео</a>
-                    </li>
-                    <li class="navbar_menu-item">
-                        <a href="#">вопрос / ответ</a>
-                    </li>
-                    <li class="navbar_menu-item">
-                        <a href="#">контакты</a>
-                    </li>
-                </ul>
-            </div> .navbar_wrapper -->
         </div><!-- .navbar-collapse -->
     </div><!-- .container -->
 </nav><!-- .main_navbar -->
