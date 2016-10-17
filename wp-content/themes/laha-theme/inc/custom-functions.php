@@ -30,3 +30,22 @@ function laha_theme_change_months($date, $req_format)
 }
 
 add_filter('date_i18n', 'laha_theme_change_months', 11, 2);
+
+// Change what's hidden by default
+add_filter('default_hidden_meta_boxes', 'be_hidden_meta_boxes', 10, 2);
+function be_hidden_meta_boxes($hidden, $screen) {
+    if ( 'post' == $screen->base || 'page' == $screen->base ) {
+        // removed 'postcustom',
+        $hidden = array(
+            'slugdiv',
+            'trackbacksdiv',
+            //'postexcerpt',
+            'commentstatusdiv',
+            'postcustom',
+            'commentsdiv',
+            'authordiv',
+            'revisionsdiv'
+        );
+    }
+    return $hidden;
+}

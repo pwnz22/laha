@@ -1,36 +1,29 @@
 @font-face {
-  font-family: "DINproRegular";
+  font-family: "DINpro";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/DINpro/DINproRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINpro/DINproRegular.woff") format("woff"), url("../fonts/DINpro/DINproRegular.ttf") format("truetype");
+  src: url("../fonts/DINproRegular/DINproRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINproRegular/DINproRegular.woff") format("woff"), url("../fonts/DINproRegular/DINproRegular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "DINproBold";
+  font-family: "DINpro";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/DINpro/DINproBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINpro/DINproBold.woff") format("woff"), url("../fonts/DINpro/DINproBold.ttf") format("truetype");
+  src: url("../fonts/DINproLight/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINproLight/RobotoRegular.woff") format("woff"), url("../fonts/DINproLight/RobotoRegular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "DINproBlack";
+  font-family: "DINpro";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/DINpro/DINproBlack.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/DINproMedium/DINproMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINproMedium/DINproMedium.woff") format("woff"), url("../fonts/DINproMedium/DINproMedium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "DINproMedium";
+  font-family: "DINpro";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/DINpro/DINproMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINpro/DINproMedium.woff") format("woff"), url("../fonts/DINpro/DINproMedium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "DINproLight";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/DINpro/DINproLight.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/DINproBlack/DINproBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/DINproBlack/DINproBlack.woff") format("woff"), url("../fonts/DINproBlack/DINproBlack.ttf") format("truetype");
 }
 
 body {
@@ -74,6 +67,10 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+.more_link:hover {
+  color: #fff;
+}
+
 .bottom_line {
   width: 100%;
   background: #eb2733;
@@ -82,6 +79,10 @@ h1, h2, h3, h4 {
 
 .header {
   padding: 25px 0 34px 0;
+}
+
+.header_logo:hover {
+  text-decoration: none;
 }
 
 .header_item img {
@@ -156,10 +157,6 @@ h1, h2, h3, h4 {
   color: #fefcfd;
 }
 
-.navbar_menu-item a:hover {
-  text-decoration: none;
-}
-
 .container > .navbar-collapse {
   margin-right: -10px;
   margin-left: -10px;
@@ -216,21 +213,38 @@ h1, h2, h3, h4 {
   margin: 67px 0 38px 0;
 }
 
+.preview_item {
+  margin-bottom: 20px;
+}
+
 .preview_item img {
   width: 100%;
+  height: 184px;
 }
 
 .preview_item .more_link {
   width: 100%;
 }
 
+.preview_single_item {
+  margin-bottom: 20px;
+}
+
 .preview_item__caption {
-  height: 78px;
+  min-height: 78px;
   padding: 14px 10px 0 15px;
+  background: #6d6e71;
+}
+
+.preview_item__caption p {
   line-height: 1.1;
   color: #fff;
   font-weight: bold;
-  background: #6d6e71;
+}
+
+.preview_single img {
+  width: 100%;
+  height: 130px;
 }
 
 .footer {
@@ -350,6 +364,10 @@ h1, h2, h3, h4 {
   color: #eb2733;
 }
 
+.ajax_loader {
+  display: inline-block;
+}
+
 .events_date,
 .events_month,
 .events_place {
@@ -390,7 +408,7 @@ h1, h2, h3, h4 {
   width: 280px;
 }
 
-.events_more_link.active{
+.events_more_link.active {
   background: #6d6e71;
 }
 
@@ -402,6 +420,10 @@ h1, h2, h3, h4 {
 
 .ajax_loader img {
   padding-bottom: 7px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .hidden {
@@ -479,6 +501,12 @@ h1, h2, h3, h4 {
   }
   .navbar_menu-item a {
     display: block;
+  }
+  .preview_single__item {
+    margin-bottom: 20px;
+  }
+  .media_fix {
+    margin-top: 0;
   }
   .header_item {
     text-align: center;
