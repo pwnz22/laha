@@ -29,7 +29,7 @@
 <header class="header">
     <div class="container">
         <div class="header_item">
-            <a href="" class="header_logo">
+            <a href="/" class="header_logo">
                 <img src="<?= esc_attr(get_option('site_logo')); ?>" alt="logo">
             </a>
             <div class="header_descr">
