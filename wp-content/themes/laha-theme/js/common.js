@@ -2,7 +2,16 @@ jQuery(function () {
 
     // Main page slider
     jQuery('.slider').slick({
-        dots: true
+        dots: true,
+        responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            dots: false,
+            arrows: false
+          }
+        },
+    ]
     });
 
     // Загрузка мероприятий

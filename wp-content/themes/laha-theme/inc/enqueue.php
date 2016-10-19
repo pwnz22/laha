@@ -46,3 +46,30 @@ function laha_load_front_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'laha_load_front_scripts');
+
+// Вызов loadCSS во фронте
+add_action('wp_head','add_load_css',7);
+function add_load_css(){
+    ?><script><?php
+    readfile(get_stylesheet_directory() . '/js/loadCSS.js');
+    ?></script><?php
+}
+
+add_action('wp_enqueue_scripts', 'laha_load_front_scripts');
+
+// Вызов loadCSS в админке
+add_action('admin_enqueue_scripts','add_load_css_admin',7);
+function add_load_css_admin(){
+    ?><script><?php
+    readfile(get_stylesheet_directory() . '/js/loadCSS.js');
+    ?></script><?php
+}
+
+add_filter('style_loader_tag', 'link_to_loadCSS_script',9999,3);
+function link_to_loadCSS_script($html, $handle, $href ) {
+    $dom = new DOMDocument();
+    $dom->loadHTML($html);
+    $a = $dom->getElementById($handle.'-css');
+    return "<script>loadCSS('" . $a->getAttribute('href') . "',0,'" . $a->getAttribute('media') . "');</script>\n";
+}
+
