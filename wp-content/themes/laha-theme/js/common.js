@@ -57,4 +57,22 @@ jQuery(function () {
         }
     });
 
+    // equalHeights
+
+    jQuery('.preview_single').each(function(){
+
+      var highestBox = 0;
+
+      jQuery('.preview_single_item', this).each(function(){
+
+        if(jQuery(this).height() > highestBox) {
+          highestBox = jQuery(this).height();
+        }
+
+      });
+
+      jQuery('.preview_single_item',this).height(highestBox);
+
+    });
+
 });
